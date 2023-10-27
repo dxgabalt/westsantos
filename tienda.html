@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>West Santos FC - Plantilla del Equipo</title>
+    <link rel="icon" href="logo.jpg">
+    <style>
+        /* Estilos CSS para la sección de Plantilla del Equipo */
+        .equipo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .jugador {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .jugador img {
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 50%;
+        }
+
+        .jugador h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .jugador p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>West Santos FC</h1>
+        <nav>
+            <!-- Puedes agregar navegación a otras secciones del sitio aquí -->
+        </nav>
+    </header>
+    <main>
+        <h2>Plantilla del Equipo</h2>
+        <div class="equipo">
+            <!-- Jugador 1 -->
+            <div class="jugador">
+                <img src="jugador1.jpg" alt="Jugador 1">
+                <h3>Nombre del Jugador 1</h3>
+                <p>Posición: Delantero</p>
+                <p>Edad: 28 años</p>
+            </div>
+            <!-- Jugador 2 -->
+            <div class="jugador">
+                <img src="jugador2.jpg" alt="Jugador 2">
+                <h3>Nombre del Jugador 2</h3>
+                <p>Posición: Mediocampista</p>
+                <p>Edad: 25 años</p>
+            </div>
+            <!-- Puedes seguir agregando más jugadores aquí -->
+        </div>
+
+        <section id="videos-transmisiones">
+            <h2>Videos y Transmisiones en Vivo</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TU-S2tI4PHM" frameborder="0" allowfullscreen></iframe>
+                <p>Video destacado: Resumen del último partido de West Santos FC</p>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/L2h5JUqexBM" frameborder="0" allowfullscreen></iframe>
+                <p>Video destacado: Entrevista con el presidente Mercedes Roa</p>
+            </div>
+            <div class="transmision-en-vivo">
+                <iframe width="560" height="315" src="https://www.twitch.tv/embed/kingleagueamericas" frameborder="0" allowfullscreen></iframe>
+                <p>Transmisión en Vivo: Sigue en directo el partido de hoy</p>
+            </div>
+        </section>
+        
+
+    </main>
+</body>
+</html>

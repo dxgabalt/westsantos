@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>West Santos FC - Kings League Americas</title>
+    <link rel="icon" href="logo.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="West Santos FC" class="logo-circular">
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="videos.html">Transmisiones</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="fans.html">Fans Club</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inicio" class="section">
+            <div class="hero">
+                <h1 class="hero-title">Bienvenidos a West Santos FC</h1>
+                <p class="hero-subtitle">Tu destino para la Kings League Americas</p>
+                <a href="#equipos" class="btn-destacado">Conoce Nuestro Equipo</a>
+            </div>
+        </section>
+
+        <section id="noticias-blog" class="section">
+            <h2>Noticias y Blog</h2>
+            <div class="noticias-container">
+                <div class="noticia">
+                    <a href="noticia1.html">
+                        <img src="noticia1.jpg" alt="Título de la Noticia 1">
+                        <h3>Título de la Noticia 1</h3>
+                        <p class="noticia-date">Fecha: 15 de octubre de 2023</p>
+                        <p class="noticia-description">Descripción breve de la noticia. Puedes incluir información importante y atractiva aquí.</p>
+                    </a>
+                </div>
+                <div class="noticia">
+                    <a href="noticia2.html">
+                        <img src="noticia2.jpg" alt="Título de la Noticia 2">
+                        <h3>Título de la Noticia 2</h3>
+                        <p class="noticia-date">Fecha: 10 de octubre de 2023</p>
+                        <p class="noticia-description">Otra noticia interesante con su descripción correspondiente. Puedes incluir imágenes atractivas.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="acerca-de-nosotros" class="section">
+            <h2>Acerca de Nosotros</h2>
+            <p>
+                Somos West Santos FC, un equipo de fútbol de la Kings League Americas. Fundado en [año de fundación], nos enorgullece representar [tu país/ubicación]. Nuestra misión es [misión del equipo] y estamos comprometidos a alcanzar nuevas alturas en el mundo del fútbol.
+            </p>
+            <p>
+                Con un equipo talentoso y apasionado, trabajamos duro en cada partido y entrenamiento. Nuestra historia está llena de momentos emocionantes y logros impresionantes.
+            </p>
+        </section>
+        
+
+        <section id="tienda" class="section">
+            <h2>Tienda</h2>
+            <div class="productos-container">
+                <div class="producto">
+                    <img src="imagen-producto-1.jpg" alt="Producto 1">
+                    <h3>Nombre del Producto 1</h3>
+                    <p>Descripción breve del Producto 1. Precio: $XX.XX</p>
+                    <button onclick="comprar('Nombre del Producto 1')">Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="imagen-producto-2.jpg" alt="Producto 2">
+                    <h3>Nombre del Producto 2</h3>
+                    <p>Descripción breve del Producto 2. Precio: $XX.XX</p>
+                    <button onclick="comprar('Nombre del Producto 2')">Comprar</button>
+                </div>
+                <!-- Agrega más productos aquí -->
+            </div>
+        </section>
+        
+        <section id="carrito" class="section">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button id="comprar">Comprar</button>
+        </section>
+        
+        
+        <section id="rivales" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Rivales de la Kings League Americas</h2>
+                <p class="section-description">Conoce a nuestros próximos rivales en la Kings League Americas y mantente al tanto de los emocionantes partidos que se avecinan.</p>
+                <a href="calendario.html" class="btn-destacado">Ver Calendario de Partidos</a>
+            </div>
+        </section>
+        
+        <section id="fans" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Únete a Nuestra Comunidad</h2>
+                <p class="section-description">Conéctate con fans apasionados de West Santos FC y mantente al tanto de las últimas noticias y eventos.</p>
+                <a href="fans.html" class="btn-destacado">Explora Nuestra Comunidad</a>
+            </div>
+        </section>
+        
+        
+
+        <section id="videos" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Videos y Transmisiones en Vivo</h2>
+                <p class="section-description">Disfruta de nuestros emocionantes videos y transmisiones en vivo. Mantente conectado con las últimas actuaciones del equipo.</p>
+                <a href="videos.html" class="btn-destacado">Ver Videos</a>
+            </div>
+        </section>
+        
+
+        <section id="contacto" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-description">¿Tienes alguna pregunta o comentario? Estamos aquí para ayudarte. Ponte en contacto con nosotros.</p>
+                <a href="contacto.html" class="btn-destacado">Contáctanos</a>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2023 West Santos FC - Kings League Americas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
